@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.solida</groupId>
+    <artifactId>super_pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.solida.web</groupId>
+  <artifactId>ear_solter</artifactId>
+  <packaging>ear</packaging>
+  <name>ear_solter</name>
+  <description>enterprise artefact</description>
+  
+   <dependencies>
+		<dependency>
+			<groupId>com.solida.web</groupId>
+			<artifactId>web_solter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>com.solida.business.api</groupId>
+			<artifactId>pojo_api_solter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.solida.business.impl</groupId>
+			<artifactId>pojo_impl_solter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.solida.dao.api</groupId>
+			<artifactId>dao_api_solter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.solida.dao.impl</groupId>
+			<artifactId>dao_impl_solter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+   </dependencies>
+  
+</project>
