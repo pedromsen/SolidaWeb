@@ -1,3 +1,4 @@
+package com.solida;
 
 public class Testing {
 
