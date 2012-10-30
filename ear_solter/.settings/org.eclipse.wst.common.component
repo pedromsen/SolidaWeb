@@ -3,20 +3,20 @@
 <wb-module deploy-name="ear_solter-0.0.1-SNAPSHOT">
 <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
 <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-<dependent-module archiveName="web_solter-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/web_solter/web_solter">
-<dependency-type>uses</dependency-type>
-</dependent-module>
-<dependent-module archiveName="pojo_api_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/pojo_api_solter/pojo_api_solter">
-<dependency-type>uses</dependency-type>
-</dependent-module>
-<dependent-module archiveName="pojo_impl_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/pojo_impl_solter/pojo_impl_solter">
-<dependency-type>uses</dependency-type>
-</dependent-module>
-<dependent-module archiveName="dao_api_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/dao_api_solter/dao_api_solter">
-<dependency-type>uses</dependency-type>
-</dependent-module>
-<dependent-module archiveName="dao_impl_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/dao_impl_solter/dao_impl_solter">
-<dependency-type>uses</dependency-type>
-</dependent-module>
+        <dependent-module archiveName="web_solter-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/web_solter/web_solter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pojo_api_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/pojo_api_solter/pojo_api_solter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pojo_impl_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/pojo_impl_solter/pojo_impl_solter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dao_api_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/solida/dao/api/dao_api_solter/0.0.1-SNAPSHOT/dao_api_solter-0.0.1-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dao_impl_solter-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/dao_impl_solter/dao_impl_solter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
 </wb-module>
 </project-modules>
