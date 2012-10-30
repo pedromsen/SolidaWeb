@@ -1,9 +1,0 @@
-package com.solida;
-
-public class Testing {
-
-	public static void main(String[] args) {
-		
-		System.out.println("hola");
-	}
-}
