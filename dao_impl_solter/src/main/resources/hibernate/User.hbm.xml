@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="solida.es.model.User" table="user" catalog="solida">
+        <id name="codUser" type="java.lang.Long">
+            <column name="COD_USER" />
+			<generator class="increment"/>
+        </id>
+        <property name="desUser" type="string">
+            <column name="DES_USER" length="100" not-null="true" unique="true" />
+        </property>
+        <property name="desPassword" type="string">
+            <column name="DES_PASSWORD" length="100" not-null="true" unique="true" />
+        </property>        
+         <property name="fecCreacion" type="java.util.Date">
+            <column name="FEC_CREACION" length="7" />
+        </property>               
+        <property name="fecUltimoAcceso" type="java.util.Date">
+            <column name="FEC_ULTIMO_ACCESO" length="7" />
+        </property>    
+ 		<property name="flgActive" type="boolean">
+			<column name="FLG_ACTIVE" />
+		</property>
+         <many-to-one name="role" class="solida.es.model.Role" cascade="all" lazy="false">
+            <column name="COD_ROLE" precision="22" scale="0" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
