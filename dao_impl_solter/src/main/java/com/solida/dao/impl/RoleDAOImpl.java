@@ -14,7 +14,7 @@ public class RoleDAOImpl extends HibernateDaoSupport implements RoleDAO{
  
 	
 	public RoleDAOImpl() {
-		// TODO Auto-generated constructor stub Prueba
+		// TODO Auto-generated 222 constructor stub Prueba
 	}
 	public void save(Role role){
 		getHibernateTemplate().save(role);
