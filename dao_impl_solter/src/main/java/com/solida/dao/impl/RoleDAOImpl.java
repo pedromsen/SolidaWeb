@@ -12,10 +12,14 @@ import com.solida.model.Role;
  
 public class RoleDAOImpl extends HibernateDaoSupport implements RoleDAO{
  
+	
+	public RoleDAOImpl() {
+		// TODO Auto-generated constructor stub Prueba
+	}
 	public void save(Role role){
 		getHibernateTemplate().save(role);
 	}
- 
+	
 	public void update(Role role){
 		getHibernateTemplate().update(role);
 	}
