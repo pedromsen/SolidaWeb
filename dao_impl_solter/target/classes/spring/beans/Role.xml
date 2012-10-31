@@ -5,7 +5,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
 
    <!-- Role Data Access Object -->
-   <bean id="roleDao" class="solida.es.dao.impl.RoleDAOImpl" >
+   <bean id="roleDao" class="com.solida.dao.impl.RoleDAOImpl" >
    		<property name="sessionFactory" ref="sessionFactory"></property>
    </bean>
  

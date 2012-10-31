@@ -5,7 +5,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
 
    <!-- User Data Access Object -->
-   <bean id="userDao" class="solida.es.dao.impl.UserDAOImpl" >
+   <bean id="userDao" class="com.solida.dao.impl.UserDAOImpl" >
    		<property name="sessionFactory" ref="sessionFactory"></property>
    </bean>
  

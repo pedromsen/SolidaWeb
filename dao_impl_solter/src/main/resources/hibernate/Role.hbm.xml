@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
  
 <hibernate-mapping>
-    <class name="solida.es.model.Role" table="role" catalog="solida">
+    <class name="com.solida.model.impl.RoleImpl" table="role" catalog="solida">
         <id name="codRole" type="java.lang.Long">
             <column name="COD_ROLE" />
 			<generator class="increment"/>

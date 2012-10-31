@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
  
 <hibernate-mapping>
-    <class name="solida.es.model.User" table="user" catalog="solida">
+    <class name="com.solida.model.impl.UserImpl" table="user" catalog="solida">
         <id name="codUser" type="java.lang.Long">
             <column name="COD_USER" />
 			<generator class="increment"/>
@@ -23,7 +23,7 @@
  		<property name="flgActive" type="boolean">
 			<column name="FLG_ACTIVE" />
 		</property>
-         <many-to-one name="role" class="solida.es.model.Role" cascade="all" lazy="false">
+         <many-to-one name="role" class="com.solida.model.impl.RoleImpl" cascade="all" lazy="false">
             <column name="COD_ROLE" precision="22" scale="0" />
         </many-to-one>
     </class>
