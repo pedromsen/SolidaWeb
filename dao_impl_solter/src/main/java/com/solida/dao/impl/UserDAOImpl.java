@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.solida.dao.UserDAO;
-import com.solida.dao.model.User;
+import com.solida.dao.model.impl.UserImpl;
+import com.solida.model.User;
 
  
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO{
@@ -25,7 +26,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO{
 	public User findByDesUser(String desUser){
 		List list = getHibernateTemplate().find(
                       "from User where desUser=?",desUser);
-		return (User)list.get(0);
+		return (UserImpl)list.get(0);
 	}
  
 }

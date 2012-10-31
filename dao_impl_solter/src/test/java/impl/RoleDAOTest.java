@@ -6,7 +6,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.solida.dao.RoleDAO;
-import com.solida.dao.model.Role;
+import com.solida.dao.model.impl.RoleImpl;
+import com.solida.model.Role;
 
 
 public class RoleDAOTest extends TestCase {
@@ -20,7 +21,7 @@ public class RoleDAOTest extends TestCase {
   	    	RoleDAO roleDAO = (RoleDAO)appContext.getBean("roleDao");
   	 
   	    	/** insert **/
-  	    	Role role = new Role();
+  	    	RoleImpl role = new RoleImpl();
   	    	role.setDesRole("ROLE_ADMIN");
   	    	role.setDesDescripcion("Perfil Administrador");
   	    	roleDAO.save(role);

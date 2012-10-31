@@ -1,10 +1,12 @@
-package com.solida.dao.model;
+package com.solida.dao.model.impl;
 
 
-import java.io.Serializable;
 import java.util.Date;
+
+import com.solida.model.Role;
+import com.solida.model.User;
  
-public class User implements Serializable {
+public class UserImpl implements User {
  
 	private static final long serialVersionUID = 1L;
  

@@ -1,9 +1,9 @@
-		package com.solida.dao.model;
+		package com.solida.dao.model.impl;
 
 
-import java.io.Serializable;
+import com.solida.model.Role;
  
-public class Role implements Serializable {
+public class RoleImpl implements Role {
  
 	private static final long serialVersionUID = 1L;
  

@@ -9,8 +9,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.solida.dao.RoleDAO;
 import com.solida.dao.UserDAO;
-import com.solida.dao.model.Role;
-import com.solida.dao.model.User;
+import com.solida.dao.model.impl.RoleImpl;
+import com.solida.dao.model.impl.UserImpl;
+import com.solida.model.Role;
+import com.solida.model.User;
 
 
 public class UserDAOTest extends TestCase {
@@ -24,7 +26,7 @@ public class UserDAOTest extends TestCase {
 		UserDAO userDAO = (UserDAO)appContext.getBean("userDao");
 
 		/** insert **/
-		User user = new User();
+		User user = new UserImpl();
 		user.setDesUser("solida");
 		user.setDesPassword("solida");
 		userDAO.save(user);
@@ -50,13 +52,13 @@ public class UserDAOTest extends TestCase {
     	UserDAO userDAO = (UserDAO)appContext.getBean("userDao");
     	RoleDAO roleDAO = (RoleDAO)appContext.getBean("roleDao");
 
-    	Role role = new Role();
+    	Role role = new RoleImpl();
       	role.setDesRole("ROLE_ADMIN");
       	role.setDesDescripcion("Perfil Administrador");
       	roleDAO.save(role);
     	
     	/** insert **/
-    	User user = new User();
+    	UserImpl user = new UserImpl();
     	user.setDesUser("solida");
     	user.setDesPassword("solida");
 

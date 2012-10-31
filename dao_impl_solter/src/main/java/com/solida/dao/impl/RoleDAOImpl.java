@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.solida.dao.RoleDAO;
-import com.solida.dao.model.Role;
+import com.solida.dao.model.impl.RoleImpl;
+import com.solida.model.Role;
 
 
  
@@ -26,7 +27,7 @@ public class RoleDAOImpl extends HibernateDaoSupport implements RoleDAO{
 	public Role findByDesRole(String desRole){
 		List list = getHibernateTemplate().find(
                       "from Role where desRole=?",desRole);
-		return (Role)list.get(0);
+		return (RoleImpl)list.get(0);
 	}
  
 }
