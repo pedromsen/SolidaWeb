@@ -13,6 +13,7 @@ import com.solida.model.Role;
 public class RoleDAOImpl extends HibernateDaoSupport implements RoleDAO{
  
 	
+	/* Otro cambio */
 	public RoleDAOImpl() {
 		// TODO Auto-generated constructor stub Prueba
 	}
